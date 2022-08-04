@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rakesh\\source\\repos\\Madhab\\Madhab\\Madhab.csproj": {}
+    "C:\\Users\\mdhakal\\Desktop\\Madhab\\Madhab\\Madhab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rakesh\\source\\repos\\Madhab\\Madhab\\Madhab.csproj": {
+    "C:\\Users\\mdhakal\\Desktop\\Madhab\\Madhab\\Madhab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rakesh\\source\\repos\\Madhab\\Madhab\\Madhab.csproj",
+        "projectUniqueName": "C:\\Users\\mdhakal\\Desktop\\Madhab\\Madhab\\Madhab.csproj",
         "projectName": "Madhab",
-        "projectPath": "C:\\Users\\Rakesh\\source\\repos\\Madhab\\Madhab\\Madhab.csproj",
-        "packagesPath": "C:\\Users\\Rakesh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rakesh\\source\\repos\\Madhab\\Madhab\\obj\\",
+        "projectPath": "C:\\Users\\mdhakal\\Desktop\\Madhab\\Madhab\\Madhab.csproj",
+        "packagesPath": "C:\\Users\\mdhakal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdhakal\\Desktop\\Madhab\\Madhab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rakesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdhakal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.22.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -47,6 +55,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.0, )"
             }
           },
           "imports": [
@@ -67,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

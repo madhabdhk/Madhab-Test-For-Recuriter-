@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 namespace Madhab.Controllers
 {
 
+    [Authorize]
     [ApiController]
     [Route("[controller/api]")]
     public class UserAlbumController : ControllerBase
@@ -16,12 +17,10 @@ namespace Madhab.Controllers
         {
             foreach (var item in endPoinst)
             {
-
                 await collectionAsync(item);
             }
             return Ok(collection);
         }
-
 
         private async Task collectionAsync(string type)
         {
@@ -40,7 +39,7 @@ namespace Madhab.Controllers
             {
                 collection.posts = JsonConvert.DeserializeObject<List<post>>(responseBody).Take(30).ToList();
             }
-            else if (type == "albums")
+            else
             {
                 collection.albums = JsonConvert.DeserializeObject<List<album>>(responseBody).Take(30).ToList();
             }
